@@ -70,6 +70,15 @@
             font-size: 14px;
             margin-top: 20px;
         }
+        .horizontal-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .horizontal-buttons button {
+            width: auto;
+        }
         @media (max-width: 600px) {
             #header {
                 font-size: 24px;
@@ -77,6 +86,9 @@
             }
             button {
                 width: 90%;
+            }
+            .horizontal-buttons {
+                flex-direction: column;
             }
         }
     </style>
@@ -88,8 +100,16 @@
             <h1>Bienvenue sur le site de la Team Nocturnal</h1>
         </div>
         <p>Rejoins notre équipe dynamique et passionnée, ou discute avec nous sur Discord. Ensemble, nous allons faire briller la Team Nocturnal !</p>
-        <button onclick="window.location.href='https://team-nocturnal.github.io/recrutement';">Recrutements</button>
+        <button onclick="window.location.href='https://team-nocturnal.github.io/softwares';">Nos Logiciels</button>
         <button onclick="window.location.href='https://team-nocturnal.github.io/discord';">Nous rejoindre sur Discord</button>
+        
+        <!-- Nouveaux boutons horizontaux -->
+        <div class="horizontal-buttons">
+            <button onclick="window.location.href='https://team-nocturnal.github.io/discord';">Nous rejoindre sur Discord</button>
+            <button onclick="window.location.href='https://team-nocturnal.github.io/membres';">Voir nos membres</button>
+            <button onclick="window.location.href='https://team-nocturnal.github.io/contact';">Contactez-nous</button>
+        </div>
+        
         <div id="credits">
             <p>&copy; 2025 Team Nocturnal. Tous droits réservés.</p>
         </div>
